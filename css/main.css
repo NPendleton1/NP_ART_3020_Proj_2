@@ -1,0 +1,58 @@
+/* Place CSS styles here */
+html {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner{
+    background-color: rgb(255, 190, 68);
+    text-align: center;
+    font-size: 20px;
+    padding: 1px;
+
+}
+
+.mainheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5d5dc4;
+    padding: 15px;
+}
+
+.mainheader nav{
+    display: inline-flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+body{
+    color: #1a1a1a;
+    font-size: 22px;
+}
+
+.messingaroundheader{
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+main{
+    margin: auto;
+}
+
+footer{
+    background-color: #5d5dc4;
+    text-align: center;
+    padding: 1px
+}
