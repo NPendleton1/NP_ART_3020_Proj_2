@@ -29,18 +29,33 @@
         <img src="img/logo.png" class="logo" alt="">
         <h1>Pendleton Eatery</h1>
       </div>
-      <div id="main-menu" class="main-menu">
-        <a class="anav" href="./about.html">Menu</a>
-        <a class="anav" href="./about.html">Locations</a>
-        <a class="anav" href="./about.html">Catering</a>
-        <a class="anav" href="./about.html">Careers</a>
+      <div id="main-menu" class="main-menu offcanvas-nav">
+        <button class="menu-toggle" aria-expanded="false"
+        aria-controls="offcanvas-menu">
+        <span class="menu-icon"></span> Menu
+        </button>
+        <ul id="offcanvas-menu" class="menu">
+          <li><a href="./about.html">Menu</a></li>
+          <li><a href="./about.html">Locations</a></li>
+          <li><a href="./about.html">Catering</a></li>
+          <li><a href="./about.html">Careers</a></li>
+        </ul>
       </div>
     </nav>
-
   </header>
-
-  <main class="bordercontainer">
-    <p>Main</p>
+  <main>
+    <section class="hero">
+      <img src="./img/restaurant.webp" alt="" class="hero-image">
+      <div class="hero-overlay">
+          <h2><strong>Worldly cuisine at one table</strong></h2>
+          <p>Fine cuisine combined with a relaxed atmosphere.</p>
+          <div class="buttondiv">
+            <button class="button-style1">ORDER NOW</button>
+            <button class="button-style2">FIND YOUR TABLE</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
