@@ -7,10 +7,15 @@ html {
 body{
     color: #fdfdfd;
     font-size: 20px;
+    background-color: #1a1a1a;
 }
 
 h1 {
     font-size: 3vw;
+}
+
+h2 {
+    font-size: 4vw;
 }
 
 p{
@@ -109,14 +114,14 @@ footer{
 
 .menu {
     position: fixed; /* Fixed position for overlay effect */
-    top: 20px;
+    top: 0;
     left: 0;
     height: 100%;
     width: 300px;
     background-color: #1a1a1a;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(100vw);
-    transition: 1s ease;
+    transform: translateX(-100%);
+    transition: 0.3s;
     color: #fdfdfd;
 }
 
@@ -131,7 +136,7 @@ footer{
 }
 
 .menu.expanded {
-    transform: translateX(50%); /* Slide in when expanded */
+    transform: translateX(0); /* Slide in when expanded */
 }
 .menu-toggle {
     color: #1a1a1a;
@@ -162,9 +167,10 @@ footer{
     width: auto;
     transform: none;
     box-shadow: none;
+    transition: none;
 }
 .menu-toggle {
-    display: none; /* Hide the toggle button on larger screens */
+    display: none;
 }
 
 }
@@ -211,6 +217,13 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .button-style1{
+        font-size: 3vw;
+    }
+    .button-style2{
+        font-size: 3vw;
+    }
+
 }
 
 .hero{
