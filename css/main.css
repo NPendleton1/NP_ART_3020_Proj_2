@@ -106,15 +106,16 @@ footer{
 .offcanvas-nav {
     position: relative; /* To position the menu within */
 }
+
 .menu {
     position: fixed; /* Fixed position for overlay effect */
     top: 20px;
     left: 0;
     height: 100%;
-    width: 400px;
+    width: 300px;
     background-color: #1a1a1a;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(-100%);
+    transform: translateX(100vw);
     transition: 1s ease;
     color: #fdfdfd;
 }
@@ -130,7 +131,7 @@ footer{
 }
 
 .menu.expanded {
-    transform: translateX(0); /* Slide in when expanded */
+    transform: translateX(50%); /* Slide in when expanded */
 }
 .menu-toggle {
     color: #1a1a1a;
@@ -151,13 +152,15 @@ footer{
 
 @media (min-width: 768px) {
     .offcanvas-nav {
-    display: block; /* Show the full navigation on larger screens */
+    display: block; 
     }
+
 .menu {
-    display: block; /* Ensure menu is visible on larger screens */
+    display: flex; /* Ensure menu is visible on larger screens */
+    gap: 1rem;
     position: static; /* Remove fixed positioning */
     width: auto;
-    transform: none; /* No need for transitions */
+    transform: none;
     box-shadow: none;
 }
 .menu-toggle {
