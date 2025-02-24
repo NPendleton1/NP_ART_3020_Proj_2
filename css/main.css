@@ -9,6 +9,12 @@ body{
     font-size: 20px;
     background-color: #1a1a1a;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
 }
 
 h1 {
@@ -53,13 +59,14 @@ header{
     top: 0;
     z-index: 1000;
     background-color: #1a1a1a;
-    padding: 0, 10px;
+    padding: 10px, 10px;
+
 }
 
 .navbar {
     align-items: center;
     background-color: #1a1a1a;
-    padding: 1rem;
+    padding: 1.5rem;
     justify-content: space-between;
     display: flex;
 }
@@ -104,8 +111,7 @@ footer{
     background-color: #5d5dc4;
     text-align: center;
     align-content: center;
-    padding: 1px, 0px;
-    min-height: 40px;
+    min-height: 10vh;
 }
 
 
@@ -230,17 +236,16 @@ footer{
 }
 
 .hero{
-    color: #1a1a1a;
-    min-height: 90vh;
+    height: 100vh;
     position: relative;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Hero Image */
 .hero-image {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -286,7 +291,7 @@ footer{
         width: 30vw;
         background-color: #1a1a1a;
         text-align: left;
-        height: 20vh;
+        height: 11rem;
         text-decoration: none;
         color:#fdfdfd;
         padding-top: 40px;
@@ -304,4 +309,34 @@ footer{
     #trymenu-toggle:checked + .tryhamburger + .trymenu {
         display: flex;
     }
+}
+
+.description{
+    min-height: 10vh;
+    background-color: #5d5dc4;
+    color: #fdfdfd;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .description{
+        padding: 2rem;
+    }
+}
+
+.aestfood1 {
+    width: auto;
+    height: 30vh;
+    
+}
+
+.twowayblock{
+    display: flex;
 }
