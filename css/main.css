@@ -8,6 +8,7 @@ body{
     color: #fdfdfd;
     font-size: 20px;
     background-color: #1a1a1a;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -58,7 +59,7 @@ header{
 .navbar {
     align-items: center;
     background-color: #1a1a1a;
-    padding: 10px;
+    padding: 1rem;
     justify-content: space-between;
     display: flex;
 }
@@ -66,7 +67,7 @@ header{
 .anav{
     text-decoration: none;
     color:#fdfdfd;
-    font-size: 2.2vw;
+    font-size: 1rem;
 }
 
 .main-menu{
@@ -76,7 +77,7 @@ header{
 }
 
 .logo{
-    max-width: 20%;
+    max-width: 15%;
     height: auto;
     padding-right: 10px;
 }
@@ -96,13 +97,14 @@ header{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 footer{
     background-color: #5d5dc4;
     text-align: center;
     align-content: center;
-    padding: 1px;
+    padding: 1px, 0px;
     min-height: 40px;
 }
 
@@ -120,8 +122,8 @@ footer{
     width: 300px;
     background-color: #1a1a1a;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(-100%);
-    transition: 0.3s;
+    transform: translateX(-100vw);
+    transition: 0s;
     color: #fdfdfd;
 }
 
@@ -129,6 +131,7 @@ footer{
     color: #fdfdfd;
     list-style: none;
     text-decoration: none;
+    font-size: 2vw;
 }
 
 .menu a:hover{
@@ -162,7 +165,7 @@ footer{
 
 .menu {
     display: flex; /* Ensure menu is visible on larger screens */
-    gap: 1rem;
+    gap: 3rem;
     position: static; /* Remove fixed positioning */
     width: auto;
     transform: none;
@@ -254,3 +257,51 @@ footer{
     border-radius: 10px;
 }
 
+.tryhamburger {
+    display: none;
+    font-size: 3rem;
+    color: #fdfdfd;
+    cursor: pointer;
+}
+
+#trymenu-toggle {
+    display: none;
+}
+
+.trymenu{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .tryhamburger{
+        display: block;
+    }
+    
+    .trymenu{
+        display: none;
+        flex-direction: column;
+        gap: 2rem;
+        position: absolute;
+        top: 5vh;
+        width: 30vw;
+        background-color: #1a1a1a;
+        text-align: left;
+        height: 20vh;
+        text-decoration: none;
+        color:#fdfdfd;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 40px;
+        border-bottom-left-radius: 25px;
+    }
+
+    .trymenu a{
+        color: #fdfdfd;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    #trymenu-toggle:checked + .tryhamburger + .trymenu {
+        display: flex;
+    }
+}
