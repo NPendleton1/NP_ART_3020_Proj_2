@@ -200,6 +200,7 @@ footer{
     padding: 10px;
     font-weight: 100;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button-style1:hover{
@@ -219,6 +220,7 @@ footer{
     padding: 10px;
     font-weight: 100;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media (max-width: 768px){
@@ -304,6 +306,10 @@ footer{
         color: #fdfdfd;
         text-decoration: none;
         font-size: 1rem;
+    }
+
+    .trymenu a:hover{
+        text-decoration: underline;
     }
 
     #trymenu-toggle:checked + .tryhamburger + .trymenu {
