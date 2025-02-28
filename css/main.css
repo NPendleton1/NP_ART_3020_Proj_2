@@ -6,11 +6,10 @@ html {
 
 body{
     color: #fdfdfd;
-    font-size: 20px;
     background-color: #1a1a1a;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden; /*just in case*/
+    margin: 0; /*manual constriction*/
+    padding: 0; /*manual constriction*/
 }
 
 .d-flex {
@@ -18,15 +17,15 @@ body{
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 p{
-    font-size: 2vw;
+    font-size: 1.5rem;
 }
 
 a{
@@ -36,13 +35,13 @@ a{
 
 @media screen and (max-width: 768px) {
     p{
-        font-size: 3vw;
+        font-size: 1rem;
     }
     h1 {
-        font-size: 7vw;
+        font-size: 2rem;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 2rem;
     }
 }
 
@@ -337,12 +336,12 @@ footer{
     .aestfoodimg {
         min-width: 100vw;
         height: auto;
+        padding-top: 2rem;
     }
     .aestfoodcontent{
         text-align: center;
-        justify-content: flex-start;
         padding: 1rem;
-        padding-bottom: 3rem ;
+        gap: 1rem;
     }
 }
 
@@ -351,16 +350,16 @@ footer{
 }
 
 .aestfoodimg {
-    height: auto;
-    width: 100%;
+    width: 130%;
 }
 
 .aestfoodcontent{
     text-align: center;
-    flex-wrap: wrap;
+    align-content: center;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .couponformblock{
